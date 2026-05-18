@@ -1,0 +1,54 @@
+h1 {
+    animation: color-change 3s infinite;
+    color: white;
+    font-size: 30px;
+    font-family: michromedium, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    font-family: michromedium, sans-serif;
+    transition: all 0.3s ease;
+}
+
+h2:hover {
+    animation: color-change 3s infinite;
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+li {
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(10px);
+    color: white;
+}
+
+@keyframes color-change {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: blue;
+    }
+}
